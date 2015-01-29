@@ -1,0 +1,347 @@
+
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+img{border: none;}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+html{	text-align: center;
+	background: transparent url('../img/bg-wordappeal-site.jpg') top left repeat-y;}
+
+body{	font: 1em/1.5 arial, sans-serif;
+		text-align: left;}
+
+.wrapper{	width: 756px;
+			margin: 5em auto 0 auto;}
+
+.header{width: 756px;}
+
+.brand{	position: relative;
+		overflow: hidden;}
+
+.logo-brand{
+	float: left;
+	display: inline;}
+	
+.vCard{
+	display: inline;
+	float: right;
+	text-align: right;	}
+
+.navigation{
+	position: relative;
+	width: 756px;
+	height: 51px;
+	margin: 0;
+	padding: 0;
+}
+
+#nav, #nav ul{
+width: 756px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	height: 51px;	}
+
+#nav a{
+display: block;
+	width: 252px;
+	height: 51px;
+	text-decoration: none;
+	color: white;
+	margin: 0;
+	padding: 0 ;
+	text-indent: 1em;
+	}
+	
+	#nav li{float: left; width: 252px;	}
+		.sub-line{	display: block;	}
+	
+	#nav li ul{	position: absolute;
+			width: 252px;
+			top: 51px;
+			left: -999em;}
+	
+		#nav li:hover ul, #nav li.sfhover ul{left: auto;
+		}/*suckerfish js*/
+			
+			#nav li ul li{	margin: 0 0 0 5px; padding: 0; 
+			background: transparent url('../img/bg-submenu.png') no-repeat left top;	
+			color: #336666;
+			width: 230px;}
+
+			#nav li ul li a{ width: 175px; height: auto; position: relative;
+				margin: 0 0 0 15px; padding: 0 0 0 15px;
+			background: url('../img/fleche.png') no-repeat left center ;
+			color: #336666; border-bottom: 1px dashed #336666;
+			text-indent: inherit;
+			}
+				
+				#nav li ul li:last-child a{border-bottom:none;}
+
+
+.motto{	width: 756px;	margin: 0 ;	padding: 1em 0;	border-bottom: 1px solid white;}
+
+.content{width:756px; overflow: hidden;}
+
+/*section*/
+.section{float: left;
+	display: inline;
+	width: 557px;
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid white;
+	}
+	.article{
+	margin: 0;
+	padding-top: 1em;
+	width: 549px;
+	}
+	
+	.footer-article{ overflow: hidden;	margin: 1em 0;	}
+	
+	.tools{	float: left; display: inline;}
+			.tags{float: right;	display: inline; }
+		
+		.tools li{display: inline; float: left;}
+			.tools li a{color: black; text-decoration: none;	}
+				.tools li a:hover{ color: black; text-decoration:underline;}
+			
+				.tags li{	display: inline; text-align: right;float: right; 	}
+					.tags li a{ text-decoration: none;}
+						.tags li a:hover{ color:#336666 ;text-decoration:underline;}
+		
+/*sidecol*/
+.sidecol{
+	float: right;
+	display: inline;
+	width: 190px;
+		}
+	
+	.our-team h3, .extranet h3{
+		margin-top: 1em;
+	}
+	
+	.box{ margin: 0 0 1em 0; padding: 0;	
+	}
+		fieldset{border: none;}
+			label{	margin-bottom: 1em;	padding: 0;}
+			
+	#form-login, .team-group{float:right;
+		text-align: right;
+		padding: 1px;
+		margin-top: 1em;}
+		
+	.form-label{padding-bottom: .3em ;	}
+	
+	input[type="password"], input[type="text"]{
+		width: 150px;
+		line-height: 1;}
+		
+	input[type="submit"]{
+		border: none;
+		margin: 0;
+		padding: 5px 8px;
+		cursor: pointer;
+		color: white;
+		background-color: #336666;}
+		
+	input[type="submit"]:hover{
+		border: none;
+		margin: 0;
+		padding: 5px 8px;
+		background-color: #ff0066;
+		}	
+	
+	.our-team{border-top: 1px solid white;}
+	
+		.team-group li{	float: right;
+		text-align: right;
+		display: inline;}
+		
+		
+		
+/*footer*/		
+.footer{
+	width: 100%;
+	background: #336666;
+	margin-top: 1em;
+	padding: 1em 0 2em 0;
+	
+}
+			.contentinfo{
+				width: 750px;
+				margin: 0 auto;
+				color: white;
+				text-align: left;
+				overflow: hidden;
+			}
+					.sitemap {
+						float: left;
+						width: 530px;
+						display: inline;
+					}
+							.primary{
+								display: inline;
+								float: left;
+								width: 45%;
+							}
+							.secondary{
+								display: inline;
+								float: right;
+								width: 45%;
+							}
+							
+					.twitter{
+						float: right;
+						width: 190px;
+						display: inline;
+					}
+
+
+	
+/*
+Typo
+ @group TYPOS	
+base 1em = 16px
+réglage selon maquette donnée psd
+cible / contexte = resultat
+
+27px = 1,6875 em
+20px = 1.25 em
+16px = 1em
+15px = 0.965 em
+12px = 0.75 em
+11px = 0.6875 em
+10px = 0.625 em
+___________________________________________________________________________________________________________*/
+
+
+html{font: normal 1em/1.4  Arial, Helvetica, Geneva, sans-serif;}
+
+.logo-brand{float:left; width: 200px; 
+background: transparent url('../img/logo-wordAppeal.png') no-repeat left top;	text-indent: -9999em;	}
+
+	#nav a span{color: #66ccff;	}
+
+.entry-title{ font-size: 2em;line-height: 1.2;}
+	p{font-size: 1em; /* 16px = 1em*/ line-height: 1.4; padding-bottom: 1em;	}
+		.motto{	font-style: italic;	font-size: 1.4em; font-weight: normal; color: #797979;	}
+			p a.mailto{color: black; text-decoration: none;}
+				p a.mailto:hover{color: black; text-decoration: underline;}
+				
+	.vCard, .datetime, .sub-line, .sub-li, .footer-article, .contentinfo, h3{font-size: small;}
+		.sub-line{	display: block; color: white;}
+			.vCard p{	margin: 0;padding: 0;}
+
+
+.contentinfo h3{font-size: 2em;}
+.contentinfo h5{font-size: 1em; text-transform: uppercase;}
+
+
+/*link*/
+a:link {text-decoration: underline; color:#336666;}
+	a:visited{color: #ccc;}
+		a:hover{color:#ff0066 ;}
+			a:active{text-decoration: underline; }
+
+.brand-color-0{color: #ff0066;}
+	.brand-color-1 {color:#336666;}
+		.brand-color-3{color: #797979;}
+	
+			.brand-color-bg a{background-color: #336666;	color:white ;}
+			
+
+/*Fancy*/
+/* @group COLOR */
+/* 
+bleu = #336666
+rose = #ff0066
+gris  = #797979
+http://ascii.cl/htmlcodes.htm */
+
+/*sprite*/		
+.news {
+    left: 0;
+    width: 252px;
+    background: url('../img/barre-nav-total-new.png') 0 0;
+}
+.solutions {
+    left: 252px;
+    width: 252px;
+    background: url('../img/barre-nav-total-new.png') -250px 0;
+}
+
+.contact {
+    left: 504px;
+    width: 252px;
+    background: url('../img/barre-nav-total-new.png') -504px 0;
+}
+
+.news a:hover {
+    background: url('../img/barre-nav-total-new.png') 0 -73px;
+}
+.solutions a:hover {
+    background: url('../img/barre-nav-total-new.png') -252px -73px;
+}
+
+.contact a:hover {
+    background: url('../img/barre-nav-total-new.png') -504px -73px;
+}
+h3{
+	font-weight: normal;
+	margin-top: .5em;
+}
+.border-top{
+	border-top: 1px solid white;
+}
+/*sidecol*/
+.fleche{padding-left: 25px;	background: url("../img/fleches.png") no-repeat 0 30%;}
+	.pdf{ display: block; margin-left: 2em;padding-left: 2em; background: url("../img/fleches-right.png") no-repeat 0 90%; 	}
+
+/*deco content article*/
+.comments-picto{padding-left: 18px;padding-right: 1em;	background: transparent url('../img/comment.png') no-repeat center left;}
+	.print-picto{padding-left:18px; padding-right: 1em; background: transparent url('../img/print.png') no-repeat center left;}
+		.send-picto{padding-left: 18px; padding-right: 1em; background: transparent url('../img/send.png') no-repeat top left;}
+
+			.tags-picto{ padding-left: 30px; padding-right: 1em; background: transparent url('../img/tags.png') no-repeat center left;}	
+			
+.footer-footer li{	list-style-type: none;}
+	.footer-footer li a{color: white; text-decoration: none;}
+		.footer-footer li a:hover{text-decoration: underline;}
+			.footer-footer li:before {  content: "\BB   "; color: #ff0066;}
+	
+ 					.footer-footer li ul li{ list-style-type:none;padding-left: 2em; }
+ 						.footer-footer li ul li:before {  content: "\25A0  "; color: #ff0066; }
+					
